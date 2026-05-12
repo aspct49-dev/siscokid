@@ -465,8 +465,13 @@ main { padding: 0; }
   margin-bottom: 1.5rem;
 }
 
-.lb-panel { display: none; }
-.lb-panel.active { display: block; }
+.lb-panel { display: none; opacity: 0; }
+.lb-panel.active { display: block; animation: fadeInPanel 0.4s ease forwards; }
+
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 /* Podium */
 .lb-podium {

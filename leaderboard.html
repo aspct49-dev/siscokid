@@ -168,21 +168,26 @@
 
   <script>
     // ============== TAB SWITCHING ==============
-    document.querySelectorAll('.lb-tab').forEach(tab => {
+    const tabContainer = document.querySelector('.lb-tabs');
+    const allTabs = Array.from(document.querySelectorAll('.lb-tab'));
+
+    function reorderTabs(activeTab) {
+      const others = allTabs.filter(t => t !== activeTab);
+      // Active tab gets order 1 (middle), others get 0 and 2
+      others[0].style.order = '0';
+      activeTab.style.order = '1';
+      others[1].style.order = '2';
+    }
+
+    // Set initial order
+    reorderTabs(allTabs.find(t => t.classList.contains('active')) || allTabs[0]);
+
+    allTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const target = tab.dataset.lb;
-        document.querySelectorAll('.lb-tab').forEach(t => t.classList.toggle('active', t === tab));
+        allTabs.forEach(t => t.classList.toggle('active', t === tab));
         document.querySelectorAll('.lb-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === target));
-
-        // Move clicked tab to the middle
-        const container = tab.parentElement;
-        const tabs = Array.from(container.children);
-        const index = tabs.indexOf(tab);
-        if (index !== 1) {
-          tabs.splice(index, 1);
-          tabs.splice(1, 0, tab);
-          tabs.forEach(t => container.appendChild(t));
-        }
+        reorderTabs(tab);
       });
     });
 
