@@ -171,23 +171,47 @@
     const tabContainer = document.querySelector('.lb-tabs');
     const allTabs = Array.from(document.querySelectorAll('.lb-tab'));
 
-    function reorderTabs(activeTab) {
+    function reorderTabs(activeTab, animate) {
+      // FLIP: record old positions
+      const firstRects = new Map();
+      if (animate) {
+        allTabs.forEach(t => firstRects.set(t, t.getBoundingClientRect()));
+      }
+
+      // Build new order: active in the middle
       const others = allTabs.filter(t => t !== activeTab);
-      // Active tab gets order 1 (middle), others get 0 and 2
-      others[0].style.order = '0';
-      activeTab.style.order = '1';
-      others[1].style.order = '2';
+      const newOrder = [others[0], activeTab, others[1]];
+
+      // Re-append in new DOM order
+      newOrder.forEach(t => tabContainer.appendChild(t));
+
+      if (animate) {
+        // FLIP: invert + play
+        newOrder.forEach(t => {
+          const first = firstRects.get(t);
+          const last = t.getBoundingClientRect();
+          const dx = first.left - last.left;
+          if (dx !== 0) {
+            t.style.transition = 'none';
+            t.style.transform = `translateX(${dx}px)`;
+            // Force reflow
+            t.offsetHeight;
+            t.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
+            t.style.transform = '';
+          }
+        });
+      }
     }
 
-    // Set initial order
-    reorderTabs(allTabs.find(t => t.classList.contains('active')) || allTabs[0]);
+    // Set initial order (no animation)
+    reorderTabs(allTabs.find(t => t.classList.contains('active')) || allTabs[0], false);
 
     allTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const target = tab.dataset.lb;
         allTabs.forEach(t => t.classList.toggle('active', t === tab));
         document.querySelectorAll('.lb-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === target));
-        reorderTabs(tab);
+        reorderTabs(tab, true);
       });
     });
 
