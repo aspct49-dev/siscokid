@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SiscoKid — Leaderboards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="brand">
+      <img src="siscokid.png" alt="SiscoKid" class="brand-logo" />
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#home">HOME</a>
+      <a href="index.html#bonuses">BONUSES</a>
+      <a href="leaderboard.html" class="active">LEADERBOARD</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="leaderboard" class="section section-glow lb-page-top">
+      <div class="section-head">
+        <div class="kicker">COMPETE &amp; WIN</div>
+        <img src="leaderboards.png" alt="Leaderboards" class="section-logo" />
+        <p class="section-sub">Wager on partner sites, climb the leaderboard, and earn rewards each week.</p>
+      </div>
+
+      <div class="lb-switch-label">SWITCH BETWEEN 3 LEADERBOARDS</div>
+
+      <div class="lb-tabs">
+        <button class="lb-tab lb-tab-shuffle active" data-lb="shuffle">
+          <img src="shuffle_logo.png" alt="Shuffle" />
+        </button>
+        <button class="lb-tab lb-tab-clash" data-lb="clash">
+          <img src="clash_logo.webp" alt="Clash.gg" />
+        </button>
+        <button class="lb-tab lb-tab-lux" data-lb="lux">
+          <img src="lux_logo.webp" alt="LuxDrop" />
+        </button>
+      </div>
+
+      <p class="lb-disclaimer">ALL PRIZES IN USD</p>
+
+      <!-- ============== SHUFFLE PANEL ============== -->
+      <div class="lb-panel active" data-panel="shuffle">
+        <div class="lb-podium">
+          <div class="lb-place lb-second">
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">2</div></div>
+            <div class="lb-username">J***Z</div>
+            <div class="lb-wagered-label">WAGERED</div>
+            <div class="lb-wagered">$187,420.<span>18</span></div>
+            <div class="lb-prize lb-prize-second">
+              $700
+              <span class="lb-coin">$</span>
+            </div>
+          </div>
+
+          <div class="lb-place lb-first">
+            <div class="lb-crown">♛</div>
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">1</div></div>
+            <div class="lb-username">S***K</div>
+            <div class="lb-wagered-label">WAGERED</div>
+            <div class="lb-wagered">$324,750.<span>42</span></div>
+            <div class="lb-prize lb-prize-first">
+              $1,000
+              <span class="lb-coin">$</span>
+            </div>
+          </div>
+
+          <div class="lb-place lb-third">
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">3</div></div>
+            <div class="lb-username">K***Y</div>
+            <div class="lb-wagered-label">WAGERED</div>
+            <div class="lb-wagered">$156,890.<span>50</span></div>
+            <div class="lb-prize lb-prize-third">
+              $500
+              <span class="lb-coin">$</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-countdown-wrap">
+          <div class="lb-clock-icon">⏱</div>
+          <div class="lb-countdown-label">LEADERBOARD ENDS IN</div>
+          <div class="lb-countdown-note">The winners will be determined when the timer runs out. Hurry up!</div>
+          <div class="lb-countdown" id="lb-countdown">
+            <div class="lb-time"><strong data-unit="days">00</strong><span>DAYS</span></div>
+            <div class="lb-time"><strong data-unit="hrs">00</strong><span>HRS</span></div>
+            <div class="lb-time"><strong data-unit="min">00</strong><span>MIN</span></div>
+            <div class="lb-time"><strong data-unit="sec">00</strong><span>SEC</span></div>
+          </div>
+          <div class="lb-announce-note">Winners announced 1 hour after timer ends</div>
+        </div>
+
+        <div class="lb-challengers">
+          <h3 class="lb-challengers-title">CHALLENGERS</h3>
+          <div class="lb-table-wrap">
+            <table class="lb-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>USER</th>
+                  <th class="num">WAGERED</th>
+                  <th class="num">PRIZE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>4</td><td><span class="lb-mini-avatar">?</span>R***N</td><td class="num">$98,540.<span class="cents">00</span></td><td class="num lb-prize-amt">$250.<span class="cents">00</span></td></tr>
+                <tr><td>5</td><td><span class="lb-mini-avatar">?</span>M***P</td><td class="num">$87,330.<span class="cents">00</span></td><td class="num lb-prize-amt">$175.<span class="cents">00</span></td></tr>
+                <tr><td>6</td><td><span class="lb-mini-avatar">?</span>T***D</td><td class="num">$72,150.<span class="cents">00</span></td><td class="num lb-prize-amt">$125.<span class="cents">00</span></td></tr>
+                <tr><td>7</td><td><span class="lb-mini-avatar">?</span>V***A</td><td class="num">$64,890.<span class="cents">00</span></td><td class="num lb-prize-amt">$100.<span class="cents">00</span></td></tr>
+                <tr><td>8</td><td><span class="lb-mini-avatar">?</span>D***X</td><td class="num">$58,420.<span class="cents">00</span></td><td class="num lb-prize-amt">$75.<span class="cents">00</span></td></tr>
+                <tr><td>9</td><td><span class="lb-mini-avatar">?</span>B***T</td><td class="num">$49,830.<span class="cents">00</span></td><td class="num lb-prize-amt">$50.<span class="cents">00</span></td></tr>
+                <tr><td>10</td><td><span class="lb-mini-avatar">?</span>L***Q</td><td class="num">$41,275.<span class="cents">00</span></td><td class="num lb-prize-amt">$25.<span class="cents">00</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============== CLASH PANEL ============== -->
+      <div class="lb-panel" data-panel="clash">
+        <div class="lb-coming-soon">
+          <img src="clash_logo.webp" alt="Clash.gg" />
+          <h3>Coming Soon</h3>
+          <p>The Clash.gg leaderboard is launching soon. Stay tuned.</p>
+        </div>
+      </div>
+
+      <!-- ============== LUX PANEL ============== -->
+      <div class="lb-panel" data-panel="lux">
+        <div class="lb-coming-soon">
+          <img src="lux_logo.webp" alt="LuxDrop" />
+          <h3>Coming Soon</h3>
+          <p>The LuxDrop leaderboard is launching soon. Stay tuned.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="siscokid.png" alt="SiscoKid" class="footer-logo" />
+          <p class="footer-disclaimer">SiscoKid Rewards is for entertainment purposes. Gamble responsibly. 18+. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#bonuses">Bonuses</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="index.html#socials">Socials</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 SiscoKid. All rights reserved.
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // ============== TAB SWITCHING ==============
+    document.querySelectorAll('.lb-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.lb;
+        document.querySelectorAll('.lb-tab').forEach(t => t.classList.toggle('active', t === tab));
+        document.querySelectorAll('.lb-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === target));
+      });
+    });
+
+    // ============== COUNTDOWN — end of current month (UTC) ==============
+    const _now = new Date();
+    const endsAt = Date.UTC(_now.getUTCFullYear(), _now.getUTCMonth() + 1, 1, 0, 0, 0);
+    function tick() {
+      const diff = Math.max(0, endsAt - Date.now());
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      const fmt = n => String(n).padStart(2, '0');
+      const root = document.getElementById('lb-countdown');
+      if (!root) return;
+      root.querySelector('[data-unit="days"]').textContent = fmt(d);
+      root.querySelector('[data-unit="hrs"]').textContent  = fmt(h);
+      root.querySelector('[data-unit="min"]').textContent  = fmt(m);
+      root.querySelector('[data-unit="sec"]').textContent  = fmt(s);
+    }
+    tick();
+    setInterval(tick, 1000);
+
+    // ============== SHUFFLE LEADERBOARD ==============
+    const SHUFFLE_AFFILIATE_ID = '9ab3853d-dc5a-40f6-bad6-d7594ac9cff7';
+    const SHUFFLE_CAMPAIGNS = ['Sisco', 'SiscoKid'];
+    const PRIZES = [1000, 700, 500, 250, 175, 125, 100, 75, 50, 25];
+
+    function maskName(name) {
+      if (!name) return '???';
+      if (name.length <= 2) return name[0] + '**';
+      return name[0] + '***' + name[name.length - 1];
+    }
+
+    function fmtMoney(n) {
+      const v = Number(n || 0);
+      return v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function splitMoney(n) {
+      const parts = fmtMoney(n).split('.');
+      return { whole: parts[0], cents: parts[1] };
+    }
+
+    function setPlace(selector, user) {
+      const root = document.querySelector(`[data-panel="shuffle"] ${selector}`);
+      if (!root || !user) return;
+      root.querySelector('.lb-username').textContent = maskName(user.username);
+      const m = splitMoney(user.wagerAmount);
+      root.querySelector('.lb-wagered').innerHTML = `$${m.whole}.<span>${m.cents}</span>`;
+    }
+
+    async function loadShuffleLeaderboard() {
+      // Current calendar month, UTC: start of month → now
+      const now = new Date();
+      const monthStart = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1, 0, 0, 0);
+      const startTime = Math.floor(monthStart / 1000);
+      const endTime = Math.floor(Date.now() / 1000);
+      const url = `https://affiliate.shuffle.com/stats/${SHUFFLE_AFFILIATE_ID}?startTime=${startTime}&endTime=${endTime}`;
+
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+
+        const ranked = data
+          .filter(u => SHUFFLE_CAMPAIGNS.includes(u.campaignCode) && Number(u.wagerAmount) > 0)
+          .sort((a, b) => Number(b.wagerAmount) - Number(a.wagerAmount))
+          .slice(0, 10);
+
+        if (ranked.length === 0) return; // keep dummy fallback
+
+        setPlace('.lb-first',  ranked[0]);
+        setPlace('.lb-second', ranked[1]);
+        setPlace('.lb-third',  ranked[2]);
+
+        const tbody = document.querySelector('[data-panel="shuffle"] .lb-table tbody');
+        if (tbody && ranked.length > 3) {
+          tbody.innerHTML = '';
+          for (let i = 3; i < ranked.length; i++) {
+            const u = ranked[i];
+            const w = splitMoney(u.wagerAmount);
+            const p = splitMoney(PRIZES[i] || 0);
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${i + 1}</td><td><span class="lb-mini-avatar">?</span>${maskName(u.username)}</td><td class="num">$${w.whole}.<span class="cents">${w.cents}</span></td><td class="num lb-prize-amt">$${p.whole}.<span class="cents">${p.cents}</span></td>`;
+            tbody.appendChild(row);
+          }
+        }
+      } catch (e) {
+        console.warn('Shuffle leaderboard fetch failed, using fallback data:', e);
+      }
+    }
+
+    loadShuffleLeaderboard();
+  </script>
+</body>
+</html>

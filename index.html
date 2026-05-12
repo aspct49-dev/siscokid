@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SiscoKid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="brand">
+      <img src="siscokid.png" alt="SiscoKid" class="brand-logo" />
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">HOME</a>
+      <a href="#bonuses">BONUSES</a>
+      <a href="leaderboard.html">LEADERBOARD</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="banner">
+      <img src="csgo_overlay.jpg" alt="" class="banner-overlay" />
+      <img src="siscokidrewards.png" alt="SiscoKid Rewards" class="banner-title" />
+    </section>
+
+    <div class="hero-cta">
+      <a href="#bonuses" class="btn btn-primary">BONUSES</a>
+      <a href="leaderboard.html" class="btn btn-outline">LEADERBOARD</a>
+    </div>
+
+    <a href="#bonuses" class="scroll-indicator" aria-label="Scroll down">
+      <span class="mouse"><span class="dot"></span></span>
+      <span class="chevron"></span>
+    </a>
+
+    <section id="bonuses" class="section section-glow">
+      <div class="section-head">
+        <div class="kicker">CLAIM &amp; ENJOY</div>
+        <img src="bonuses.png" alt="Bonuses" class="section-logo" />
+        <p class="section-sub">Get rewarded with deposit bonuses, free cases, and exclusive perks on all your favorite sites.</p>
+      </div>
+
+      <div class="bonus-grid">
+        <article class="bonus-card bonus-shuffle">
+          <div class="bonus-art"><img src="shuffle_logo.png" alt="Shuffle" /></div>
+          <div class="bonus-body">
+            <h3 class="bonus-headline">100% DEPOSIT BONUS</h3>
+            <div class="bonus-sub">WITH A 35X WAGER</div>
+            <div class="bonus-code">USE CODE <strong>SISCO</strong></div>
+            <a href="#shuffle" class="btn btn-block btn-shuffle">CLAIM NOW</a>
+          </div>
+        </article>
+
+        <article class="bonus-card bonus-clash">
+          <div class="bonus-art"><img src="clash_logo.webp" alt="Clash.gg" /></div>
+          <div class="bonus-body">
+            <h3 class="bonus-headline">5% BONUS</h3>
+            <div class="bonus-sub">+ FREE CASES</div>
+            <div class="bonus-code">USE CODE <strong>SISCO</strong></div>
+            <a href="#clash" class="btn btn-block btn-clash">CLAIM NOW</a>
+          </div>
+        </article>
+
+        <article class="bonus-card bonus-lux">
+          <div class="bonus-art"><img src="lux_logo.webp" alt="LuxDrop" /></div>
+          <div class="bonus-body">
+            <h3 class="bonus-headline">5% BONUS</h3>
+            <div class="bonus-sub">+ FREE CASES</div>
+            <div class="bonus-code">USE CODE <strong>SISCO</strong></div>
+            <a href="#lux" class="btn btn-block btn-lux">CLAIM NOW</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="section section-glow">
+      <div class="section-head">
+        <div class="kicker">COMPETE &amp; WIN</div>
+        <img src="leaderboards.png" alt="Leaderboards" class="section-logo" />
+        <p class="section-sub">Wager on partner sites, climb the leaderboard, and earn rewards each week.</p>
+      </div>
+
+      <div class="lb-snippet">
+        <div class="lb-podium lb-podium-snippet">
+          <div class="lb-place lb-second">
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">2</div></div>
+            <div class="lb-username">J***Z</div>
+            <div class="lb-prize lb-prize-second">$700 <span class="lb-coin">$</span></div>
+          </div>
+
+          <div class="lb-place lb-first">
+            <div class="lb-crown">♛</div>
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">1</div></div>
+            <div class="lb-username">S***K</div>
+            <div class="lb-prize lb-prize-first">$1,000 <span class="lb-coin">$</span></div>
+          </div>
+
+          <div class="lb-place lb-third">
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">3</div></div>
+            <div class="lb-username">K***Y</div>
+            <div class="lb-prize lb-prize-third">$500 <span class="lb-coin">$</span></div>
+          </div>
+        </div>
+
+        <a href="leaderboard.html" class="btn btn-primary lb-snippet-cta">VIEW FULL LEADERBOARD</a>
+      </div>
+    </section>
+
+    <section id="socials" class="section section-glow">
+      <div class="section-head">
+        <div class="kicker">FOLLOW MY</div>
+        <img src="socials.png" alt="Socials" class="section-logo" />
+      </div>
+
+      <div class="socials-grid">
+        <a href="#twitter" class="social social-twitter">
+          <div class="social-icon"><img src="socmed-tw.svg" alt="Twitter" /></div>
+          <div class="social-name">Twitter</div>
+          <div class="social-desc">Giveaways, updates &amp; more</div>
+          <span class="btn btn-block btn-twitter">Follow</span>
+        </a>
+
+        <a href="#kick" class="social social-kick">
+          <div class="social-icon"><img src="socmed-kick.svg" alt="Kick" /></div>
+          <div class="social-name">Kick</div>
+          <div class="social-desc">Streams, clips &amp; more</div>
+          <span class="btn btn-block btn-kick">Follow</span>
+        </a>
+
+        <a href="#discord" class="social social-discord">
+          <div class="social-icon"><img src="socmed-discord.svg" alt="Discord" /></div>
+          <div class="social-name">Discord</div>
+          <div class="social-desc">Community, chat &amp; more</div>
+          <span class="btn btn-block btn-discord">Join</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="siscokid.png" alt="SiscoKid" class="footer-logo" />
+          <p class="footer-disclaimer">SiscoKid Rewards is for entertainment purposes. Gamble responsibly. 18+. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#bonuses">Bonuses</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="#socials">Socials</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 SiscoKid. All rights reserved.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
