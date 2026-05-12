@@ -490,7 +490,7 @@ main { padding: 0; }
 .lb-first {
   background: linear-gradient(180deg, rgba(255, 200, 0, 0.18) 0%, rgba(255, 200, 0, 0.05) 50%, transparent 100%);
   border-color: rgba(255, 200, 0, 0.35);
-  padding-top: 4rem;
+  padding-top: 7.5rem;
   box-shadow: 0 0 40px rgba(255, 200, 0, 0.10);
 }
 
