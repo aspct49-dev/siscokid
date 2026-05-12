@@ -173,6 +173,16 @@
         const target = tab.dataset.lb;
         document.querySelectorAll('.lb-tab').forEach(t => t.classList.toggle('active', t === tab));
         document.querySelectorAll('.lb-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === target));
+
+        // Move clicked tab to the middle
+        const container = tab.parentElement;
+        const tabs = Array.from(container.children);
+        const index = tabs.indexOf(tab);
+        if (index !== 1) {
+          tabs.splice(index, 1);
+          tabs.splice(1, 0, tab);
+          tabs.forEach(t => container.appendChild(t));
+        }
       });
     });
 
