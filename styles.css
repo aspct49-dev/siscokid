@@ -475,7 +475,7 @@ main { padding: 0; }
   gap: 1.25rem;
   align-items: end;
   max-width: 1000px;
-  margin: 2.5rem auto;
+  margin: 4.5rem auto 2.5rem;
 }
 
 .lb-place {
@@ -490,8 +490,8 @@ main { padding: 0; }
 .lb-first {
   background: linear-gradient(180deg, rgba(255, 200, 0, 0.18) 0%, rgba(255, 200, 0, 0.05) 50%, transparent 100%);
   border-color: rgba(255, 200, 0, 0.35);
-  padding-top: 7.5rem;
   box-shadow: 0 0 40px rgba(255, 200, 0, 0.10);
+  transform: translateY(-2.5rem);
 }
 
 .lb-second {
