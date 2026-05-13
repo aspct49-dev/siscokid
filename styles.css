@@ -168,7 +168,7 @@ main { padding: 0; }
   opacity: 1;
   mix-blend-mode: overlay;
   pointer-events: none;
-  filter: brightness(1.9) contrast(1.25);
+  filter: brightness(1.9) contrast(1.25) blur(2px);
 }
 
 .banner::before,
