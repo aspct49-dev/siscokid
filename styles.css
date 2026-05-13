@@ -201,6 +201,7 @@ main { padding: 0; }
   gap: 0.1rem;
   max-width: 95%;
   text-align: center;
+  margin-top: -40px;
 }
 
 .banner-title {
@@ -218,7 +219,7 @@ main { padding: 0; }
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
-  margin-top: -5rem;
+  margin-top: -7rem;
 }
 
 .banner-tagline .accent {
@@ -272,7 +273,8 @@ main { padding: 0; }
   display: flex;
   gap: 1rem;
   justify-content: center;
-  padding: 0.25rem 1rem 0;
+  padding: 0;
+  margin-top: -28px;
 }
 
 /* ---------- SCROLL INDICATOR ---------- */
