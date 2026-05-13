@@ -152,14 +152,14 @@ main { padding: 0; }
 
 .banner-overlay {
   position: absolute;
-  inset: -24px;
-  width: calc(100% + 48px);
-  height: calc(100% + 48px);
+  inset: -12px;
+  width: calc(100% + 24px);
+  height: calc(100% + 24px);
   object-fit: cover;
-  opacity: 0.35;
+  opacity: 0.4;
   mix-blend-mode: overlay;
   pointer-events: none;
-  filter: blur(10px);
+  filter: blur(4px);
 }
 
 .banner::before,
