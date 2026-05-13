@@ -24,15 +24,15 @@
 
   <main>
     <section id="leaderboard" class="section section-glow lb-page-top">
-      <div class="section-head">
+      <div class="section-head reveal">
         <div class="kicker">COMPETE &amp; WIN</div>
         <img src="leaderboards.png" alt="Leaderboards" class="section-logo" />
         <p class="section-sub">Wager on partner sites, climb the leaderboard, and earn rewards each week.</p>
       </div>
 
-      <div class="lb-switch-label">SWITCH BETWEEN 3 LEADERBOARDS</div>
+      <div class="lb-switch-label reveal">SWITCH BETWEEN 3 LEADERBOARDS</div>
 
-      <div class="lb-tabs">
+      <div class="lb-tabs reveal">
         <button class="lb-tab lb-tab-clash" data-lb="clash">
           <img src="clash_logo.webp" alt="Clash.gg" style="height: 34px;" />
         </button>
@@ -44,16 +44,16 @@
         </button>
       </div>
 
-      <p class="lb-disclaimer">ALL PRIZES IN USD</p>
+      <p class="lb-disclaimer reveal">ALL PRIZES IN USD</p>
 
       <!-- ============== SHUFFLE PANEL ============== -->
       <div class="lb-panel active" data-panel="shuffle">
-        <h2 style="text-align: center; font-size: 2.2rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: 0.02em;">
+        <h2 class="reveal" style="text-align: center; font-size: 2.2rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: 0.02em;">
           <span style="color: var(--shuffle);">$3000</span> <span style="color: #ffffff;">SHUFFLE LEADERBOARD</span>
         </h2>
 
         <div class="lb-podium">
-          <div class="lb-place lb-second">
+          <div class="lb-place lb-second reveal">
             <div class="lb-avatar"><span>?</span><div class="lb-rank">2</div></div>
             <div class="lb-username">J***Z</div>
             <div class="lb-wagered-label">WAGERED</div>
@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          <div class="lb-place lb-first">
+          <div class="lb-place lb-first reveal">
             <div class="lb-crown">♛</div>
             <div class="lb-avatar"><span>?</span><div class="lb-rank">1</div></div>
             <div class="lb-username">S***K</div>
@@ -76,7 +76,7 @@
             </div>
           </div>
 
-          <div class="lb-place lb-third">
+          <div class="lb-place lb-third reveal">
             <div class="lb-avatar"><span>?</span><div class="lb-rank">3</div></div>
             <div class="lb-username">K***Y</div>
             <div class="lb-wagered-label">WAGERED</div>
@@ -88,7 +88,7 @@
           </div>
         </div>
 
-        <div class="lb-countdown-wrap">
+        <div class="lb-countdown-wrap reveal">
           <div class="lb-clock-icon">⏱</div>
           <div class="lb-countdown-label">LEADERBOARD ENDS IN</div>
           <div class="lb-countdown-note">The winners will be determined when the timer runs out.</div>
@@ -101,7 +101,7 @@
           <div class="lb-announce-note">Wager abuse will lead to disqualification and forfeiture of leaderboard prize</div>
         </div>
 
-        <div class="lb-challengers">
+        <div class="lb-challengers reveal">
           <h3 class="lb-challengers-title">CHALLENGERS</h3>
           <div class="lb-table-wrap">
             <table class="lb-table">
@@ -129,7 +129,7 @@
 
       <!-- ============== CLASH PANEL ============== -->
       <div class="lb-panel" data-panel="clash">
-        <div class="lb-coming-soon">
+        <div class="lb-coming-soon reveal">
           <img src="clash_logo.webp" alt="Clash.gg" />
           <h3>Coming Soon</h3>
           <p>The Clash.gg leaderboard is launching soon. Stay tuned.</p>
@@ -138,7 +138,7 @@
 
       <!-- ============== LUX PANEL ============== -->
       <div class="lb-panel" data-panel="lux">
-        <div class="lb-coming-soon">
+        <div class="lb-coming-soon reveal">
           <img src="lux_logo.webp" alt="LuxDrop" />
           <h3>Coming Soon</h3>
           <p>The LuxDrop leaderboard is launching soon. Stay tuned.</p>
@@ -147,7 +147,7 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-inner">
+      <div class="footer-inner reveal">
         <div class="footer-brand">
           <img src="siscokid.png" alt="SiscoKid" class="footer-logo" />
           <p class="footer-disclaimer">SiscoKid Rewards is for entertainment purposes. Gamble responsibly. 18+. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
@@ -167,6 +167,17 @@
   </main>
 
   <script>
+    // ============== SCROLL REVEAL ==============
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
     // ============== TAB SWITCHING ==============
     document.querySelectorAll('.lb-tab').forEach(tab => {
       tab.addEventListener('click', () => {
