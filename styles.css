@@ -28,6 +28,15 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image:
+    radial-gradient(ellipse 110% 55% at 50% 100%, rgba(95, 12, 18, 0.30), transparent 60%),
+    radial-gradient(circle 720px at 10% 18%, rgba(120, 16, 22, 0.22), transparent 65%),
+    radial-gradient(circle 820px at 90% 78%, rgba(95, 10, 16, 0.20), transparent 70%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 /* Film grain overlay — subtle noise across the entire viewport */
 body::before {
   content: "";
