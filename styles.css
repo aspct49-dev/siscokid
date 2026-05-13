@@ -144,21 +144,22 @@ main { padding: 0; }
   overflow: hidden;
   background:
     radial-gradient(ellipse 45% 65% at 50% 90%,
-      rgba(140, 30, 35, 0.45) 0%,
-      rgba(85, 18, 22, 0.22) 40%,
+      rgba(95, 15, 20, 0.55) 0%,
+      rgba(55, 8, 12, 0.30) 40%,
       rgba(0, 0, 0, 0) 80%),
-    #2a1418;
+    #160608;
 }
 
 .banner-overlay {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: -24px;
+  width: calc(100% + 48px);
+  height: calc(100% + 48px);
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.35;
   mix-blend-mode: overlay;
   pointer-events: none;
+  filter: blur(10px);
 }
 
 .banner::before,
