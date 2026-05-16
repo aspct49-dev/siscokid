@@ -985,26 +985,129 @@ main { padding: 0; }
   .partners,
   .bonus-grid,
   .socials-grid { grid-template-columns: 1fr; }
+
   .lb-podium {
     grid-template-columns: 1fr;
     max-width: 420px;
+    gap: 0.75rem;
   }
   .lb-countdown { gap: 0.65rem; flex-wrap: wrap; }
   .lb-tab { min-width: 100px; padding: 0.7rem 1rem; }
+
+  .section { padding: 2.75rem 1.25rem; }
+  .section-logo { margin: -5rem auto -5rem; }
 }
 
 @media (max-width: 768px) {
-  .nav { flex-wrap: wrap; gap: 1rem; padding: 0.5rem 1rem; }
+  /* Nav */
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.35rem 1rem 0.5rem;
+  }
+  .brand-logo { height: 50px; }
   .nav-links {
     position: static;
     transform: none;
-    gap: 1.5rem;
+    gap: 1.25rem;
     order: 3;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
   }
-  .hero-cta { flex-direction: column; align-items: center; }
-  .hero-cta .btn { width: 220px; }
-  .footer-inner { grid-template-columns: 1fr; }
-  .footer-links { align-items: flex-start; }
+  .nav-links a::after { bottom: -6px; max-width: 36px; height: 2px; }
+
+  /* Banner / Hero */
+  .banner { height: 360px; }
+  .banner-content { margin-top: -10px; max-width: 100%; padding: 0 1rem; }
+  .banner-title { max-height: 220px; }
+  .banner-tagline {
+    margin-top: -3.5rem;
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Hero CTA */
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .hero-cta .btn { width: min(260px, 90%); padding: 0.75rem 1.5rem; }
+
+  /* Sections */
+  .section { padding: 2.25rem 1rem; }
+  .section-logo { margin: -4rem auto -4rem; }
+  .section-sub { font-size: 0.88rem; padding: 0 0.5rem; }
+  .kicker { font-size: 0.75rem; }
+
+  /* Bonus cards */
+  .bonus-grid { gap: 1rem; }
+  .bonus-headline { font-size: 1.75rem; }
+  .bonus-art { height: 90px; padding: 1rem 1rem 0.25rem; }
+
+  /* Leaderboard snippet podium on home */
+  .lb-podium-snippet .lb-place { padding: 1.25rem 1rem 0; }
+
+  /* Leaderboard page */
+  .lb-tabs { gap: 0.5rem; }
+  .lb-tab { min-width: 0; flex: 1 1 0; padding: 0.6rem 0.75rem; }
+  .lb-tab img { height: 22px; }
+  .lb-place { padding: 2.25rem 1rem 0; }
+  .lb-first { padding-top: 2.75rem; }
+  .lb-avatar { width: 64px; height: 64px; font-size: 1.4rem; }
+  .lb-username { font-size: 1rem; }
+  .lb-wagered { font-size: 0.95rem; margin-bottom: 1rem; }
+  .lb-prize { font-size: 1.25rem; padding: 0.7rem 1rem; }
+  .lb-time strong { font-size: 1.2rem; }
+  .lb-time span { font-size: 0.65rem; }
+  .lb-time { min-width: 48px; }
+  .lb-challengers { padding: 0.85rem 0.85rem 0.5rem; }
+  .lb-table { font-size: 0.85rem; }
+  .lb-table th, .lb-table td { padding: 0.6rem 0.5rem; }
+  .lb-mini-avatar { width: 22px; height: 22px; margin-right: 0.4rem; font-size: 0.7rem; }
+  .lb-page-top { padding-top: 3rem; }
+
+  /* Socials */
+  .social { padding: 1.25rem 1rem 1rem; }
+  .social-icon img { width: 72px; height: 72px; }
+  .social-name { font-size: 1.2rem; }
+  .social-desc { font-size: 0.85rem; }
+
+  /* Footer */
+  .footer-inner { grid-template-columns: 1fr; padding: 2rem 1rem 1.5rem; }
+  .footer-links { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 1rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .banner { height: 320px; }
+  .banner-title { max-height: 180px; }
+  .banner-content { margin-top: 0; }
+  .banner-tagline { margin-top: -2.75rem; font-size: 0.78rem; line-height: 1.4; }
+
+  .nav { padding: 0.25rem 0.75rem 0.5rem; }
+  .brand-logo { height: 44px; }
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 0.85rem; letter-spacing: 0.06em; }
+
+  .section { padding: 1.75rem 0.85rem; }
+  .section-logo { margin: -3rem auto -3rem; }
+
+  .bonus-card { border-radius: 10px; }
+  .bonus-headline { font-size: 1.5rem; }
+  .bonus-sub { font-size: 0.8rem; }
+  .bonus-art { height: 80px; padding: 0.85rem 0.75rem 0; }
+  .bonus-body { padding: 0.6rem 1rem 1rem; }
+
+  .lb-tabs { gap: 0.4rem; }
+  .lb-tab { padding: 0.55rem 0.5rem; }
+  .lb-tab img { height: 18px; }
+  .lb-countdown { gap: 0.5rem; }
+  .lb-time { min-width: 42px; }
+  .lb-time strong { font-size: 1.05rem; }
+
+  .lb-table { font-size: 0.78rem; }
+  .lb-table th, .lb-table td { padding: 0.5rem 0.35rem; }
+  .lb-mini-avatar { display: none; }
 }
