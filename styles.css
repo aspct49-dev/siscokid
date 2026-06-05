@@ -271,7 +271,7 @@ main { padding: 0; }
 .btn-shuffle { background: var(--shuffle); color: #fff;    border-color: var(--shuffle); }
 .btn-clash   { background: var(--clash);   color: #fff;    border-color: var(--clash); }
 .btn-lux     { background: var(--lux);     color: #001318; border-color: var(--lux); }
-.btn-twitter { background: var(--twitter); color: #fff;    border-color: var(--twitter); }
+.btn-twitter { background: var(--twitter); color: #000;    border-color: var(--twitter); }
 .btn-kick    { background: var(--kick);    color: #001a00; border-color: var(--kick); }
 .btn-discord { background: var(--discord); color: #fff;    border-color: var(--discord); }
 .btn-shuffle:hover, .btn-clash:hover, .btn-lux:hover,
