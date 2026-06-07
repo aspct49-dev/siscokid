@@ -149,8 +149,7 @@
     <footer class="footer">
       <div class="footer-inner reveal">
         <div class="footer-brand">
-          <img src="siscokid.png" alt="SiscoKid" class="footer-logo" />
-          <p class="footer-disclaimer">SiscoKid Rewards is for entertainment purposes. Gamble responsibly. 18+. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
+          <p class="footer-disclaimer">Sisco Rewards is for entertainment purposes. Gamble responsibly. 18+. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
         </div>
 
         <div class="footer-links">
@@ -209,7 +208,6 @@
 
     // ============== SHUFFLE LEADERBOARD ==============
     const SHUFFLE_AFFILIATE_ID = '9ab3853d-dc5a-40f6-bad6-d7594ac9cff7';
-    const SHUFFLE_CAMPAIGNS = ['Sisco', 'SiscoKid'];
     const PRIZES = [1000, 700, 500, 250, 175, 125, 100, 75, 50, 25];
 
     function maskName(name) {
@@ -232,17 +230,12 @@
       const root = document.querySelector(`[data-panel="shuffle"] ${selector}`);
       if (!root || !user) return;
       root.querySelector('.lb-username').textContent = maskName(user.username);
-      const m = splitMoney(user.wagerAmount);
+      const m = splitMoney(user.weightedWagerAmount);
       root.querySelector('.lb-wagered').innerHTML = `$${m.whole}.<span>${m.cents}</span>`;
     }
 
     async function loadShuffleLeaderboard() {
-      // Current calendar month, UTC: start of month → now
-      const now = new Date();
-      const monthStart = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1, 0, 0, 0);
-      const startTime = Math.floor(monthStart / 1000);
-      const endTime = Math.floor(Date.now() / 1000);
-      const url = `https://affiliate.shuffle.com/stats/${SHUFFLE_AFFILIATE_ID}?startTime=${startTime}&endTime=${endTime}`;
+      const url = `https://affiliate.shuffle.com/wager/${SHUFFLE_AFFILIATE_ID}`;
 
       try {
         const res = await fetch(url);
@@ -250,8 +243,8 @@
         const data = await res.json();
 
         const ranked = data
-          .filter(u => SHUFFLE_CAMPAIGNS.includes(u.campaignCode) && Number(u.wagerAmount) > 0)
-          .sort((a, b) => Number(b.wagerAmount) - Number(a.wagerAmount))
+          .filter(u => Number(u.weightedWagerAmount) > 0)
+          .sort((a, b) => Number(b.weightedWagerAmount) - Number(a.weightedWagerAmount))
           .slice(0, 10);
 
         if (ranked.length === 0) return; // keep dummy fallback
@@ -265,7 +258,7 @@
           tbody.innerHTML = '';
           for (let i = 3; i < ranked.length; i++) {
             const u = ranked[i];
-            const w = splitMoney(u.wagerAmount);
+            const w = splitMoney(u.weightedWagerAmount);
             const p = splitMoney(PRIZES[i] || 0);
             const row = document.createElement('tr');
             row.innerHTML = `<td>${i + 1}</td><td><span class="lb-mini-avatar">?</span>${maskName(u.username)}</td><td class="num">$${w.whole}.<span class="cents">${w.cents}</span></td><td class="num lb-prize-amt">$${p.whole}.<span class="cents">${p.cents}</span></td>`;
