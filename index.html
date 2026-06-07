@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
   <header class="nav">
     <a href="#home" class="brand">
       <img src="siscokid.png" alt="Sisco" class="brand-logo" />
@@ -179,6 +180,7 @@
     </footer>
   </main>
 
+  <script src="particles.js"></script>
   <script>
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {

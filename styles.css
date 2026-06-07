@@ -65,6 +65,16 @@ a { color: inherit; text-decoration: none; }
   border: 0;
 }
 
+/* Ambient floating particle layer — sits above the page background, below content */
+#bg-particles {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
 /* ---------- NAV ---------- */
 .nav {
   position: sticky;
@@ -158,7 +168,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ---------- BANNER ---------- */
-main { padding: 0; }
+main { padding: 0; position: relative; z-index: 1; }
 
 .banner {
   position: relative;
