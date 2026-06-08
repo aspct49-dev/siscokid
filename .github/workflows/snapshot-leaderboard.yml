@@ -1,0 +1,35 @@
+name: Archive monthly leaderboard
+
+on:
+  schedule:
+    # 00:05 UTC on the 1st of every month — snapshots the month that just ended.
+    - cron: '5 0 1 * *'
+  workflow_dispatch: {} # allow manual runs (also archives the most recently completed month)
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Snapshot previous month
+        run: node scripts/snapshot-leaderboard.mjs
+
+      - name: Commit snapshot if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add archive/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Archive leaderboard snapshot ($(date -u +%Y-%m))"
+            git push
+          fi
