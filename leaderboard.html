@@ -253,6 +253,23 @@
       root.querySelector('.lb-wagered').innerHTML = `$${m.whole}.<span>${m.cents}</span>`;
     }
 
+    // The Shuffle endpoint intermittently returns HTTP 400, so retry a few times
+    // with backoff before giving up (which would leave the fallback content showing).
+    async function fetchWithRetry(url, attempts = 5) {
+      let lastErr;
+      for (let i = 1; i <= attempts; i++) {
+        try {
+          const res = await fetch(url, { cache: 'no-store' });
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return await res.json();
+        } catch (err) {
+          lastErr = err;
+          if (i < attempts) await new Promise(r => setTimeout(r, 600 * i));
+        }
+      }
+      throw lastErr;
+    }
+
     async function loadShuffleLeaderboard() {
       // Scope to the current calendar month (UTC): start of month -> now, in seconds
       const now = new Date();
@@ -262,9 +279,7 @@
       const url = `https://affiliate.shuffle.com/wager/${SHUFFLE_AFFILIATE_ID}?startTime=${startTime}&endTime=${endTime}`;
 
       try {
-        const res = await fetch(url);
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
+        const data = await fetchWithRetry(url);
 
         const ranked = data
           .filter(u => Number(u.weightedWagerAmount) > 0)
