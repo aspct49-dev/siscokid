@@ -32,9 +32,11 @@ body {
   background-image:
     radial-gradient(ellipse 110% 55% at 50% 100%, rgba(95, 12, 18, 0.30), transparent 60%),
     radial-gradient(circle 720px at 10% 18%, rgba(120, 16, 22, 0.22), transparent 65%),
-    radial-gradient(circle 820px at 90% 78%, rgba(95, 10, 16, 0.20), transparent 70%);
+    radial-gradient(circle 820px at 90% 78%, rgba(95, 10, 16, 0.20), transparent 70%),
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='180'><g fill='none' stroke='%23ff5a5a' stroke-opacity='0.05' stroke-width='1.5'><path d='M0 30 C150 12 150 12 300 30 C450 48 450 48 600 30'/><path d='M0 90 C150 112 150 112 300 90 C450 68 450 68 600 90'/><path d='M0 150 C150 134 150 134 300 150 C450 166 450 166 600 150'/></g></svg>");
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+  background-size: auto, auto, auto, 600px 180px;
 }
 
 /* Film grain overlay — subtle noise across the entire viewport */
@@ -153,6 +155,7 @@ a { color: inherit; text-decoration: none; }
   .nav-links a.active::after { animation: none; }
   .section-head::before { animation: none; }
   .banner-title, .banner-tagline, .hero-cta { animation: none; opacity: 1; transform: none; }
+  .banner-title { transform: translateY(-50px); }
   .banner-overlay { animation: none; }
   .btn-primary::after { display: none; animation: none; }
 }
@@ -166,7 +169,7 @@ main { padding: 0; }
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 430px;
+  height: 620px;
   overflow: hidden;
   background:
     radial-gradient(ellipse 65% 90% at 50% 60%,
@@ -238,9 +241,11 @@ main { padding: 0; }
 
 .banner-title {
   max-width: 100%;
-  max-height: 360px;
+  height: clamp(260px, 36vh, 380px);
+  width: auto;
   object-fit: contain;
   filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.6));
+  transform: translateY(-50px);
   animation: hero-fade 0.7s ease 0.1s both, logo-float 6s ease-in-out 1s infinite;
 }
 
@@ -249,8 +254,8 @@ main { padding: 0; }
   to   { opacity: 1; }
 }
 @keyframes logo-float {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(-50px); }
+  50%      { transform: translateY(-60px); }
 }
 
 .banner-tagline {
@@ -261,7 +266,7 @@ main { padding: 0; }
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
-  margin-top: -7rem;
+  margin-top: -8.5rem;
   animation: hero-in 0.7s cubic-bezier(.2, .8, .2, 1) 0.3s both;
 }
 
