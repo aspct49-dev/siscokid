@@ -11,7 +11,10 @@ module.exports = async (req, res) => {
   const apiKey = process.env.LUXDROP_API_KEY;
   if (!apiKey) {
     res.setHeader('Cache-Control', 'no-store');
-    res.status(500).json({ error: 'missing_api_key', detail: 'Set LUXDROP_API_KEY in Vercel project env vars.' });
+    res.status(500).json({
+      error: 'missing_api_key',
+      detail: 'Set LUXDROP_API_KEY in Vercel project env vars and redeploy.',
+    });
     return;
   }
 
@@ -24,12 +27,23 @@ module.exports = async (req, res) => {
 
   const url = `https://api.luxdrop.com/external/affiliates?codes=${AFFILIATE_CODE}&startDate=${startDate}&endDate=${endDate}`;
 
+  // Fingerprint of the key so we can verify Vercel is sending the value we expect
+  // without leaking it. Logs the first 4 / last 4 chars + length.
+  const keyFp = `${apiKey.slice(0, 4)}…${apiKey.slice(-4)} (len=${apiKey.length})`;
+
   let data;
   let lastErr;
+  let lastStatus;
+  let lastBody;
   for (let i = 0; i < 5; i++) {
     try {
       const r = await fetch(url, { headers: { 'x-api-key': apiKey } });
-      if (!r.ok) throw new Error('HTTP ' + r.status);
+      lastStatus = r.status;
+      if (!r.ok) {
+        // Capture the upstream response body so we can see WHY it rejected us.
+        lastBody = await r.text().catch(() => '');
+        throw new Error('HTTP ' + r.status);
+      }
       data = await r.json();
       break;
     } catch (err) {
@@ -40,7 +54,14 @@ module.exports = async (req, res) => {
 
   if (data === undefined) {
     res.setHeader('Cache-Control', 'no-store');
-    res.status(502).json({ error: 'upstream_unavailable', detail: String(lastErr) });
+    res.status(502).json({
+      error: 'upstream_unavailable',
+      detail: String(lastErr),
+      upstreamStatus: lastStatus,
+      upstreamBody: (lastBody || '').slice(0, 500),
+      sentTo: url,
+      keyFingerprint: keyFp,
+    });
     return;
   }
 
