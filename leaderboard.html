@@ -145,10 +145,82 @@
 
       <!-- ============== LUX PANEL ============== -->
       <div class="lb-panel" data-panel="lux">
-        <div class="lb-coming-soon reveal">
-          <img src="lux_logo.webp" alt="LuxDrop" />
-          <h3>Coming Soon</h3>
-          <p>The LuxDrop leaderboard is launching soon. Stay tuned.</p>
+        <h2 class="reveal" style="text-align: center; font-size: 2.2rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: 0.02em;">
+          <span style="color: var(--lux);">$3000</span> <span style="color: #ffffff;">LUXDROP LEADERBOARD</span>
+        </h2>
+
+        <div class="lb-podium">
+          <div class="lb-place lb-second reveal">
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">2</div></div>
+            <div class="lb-username">—</div>
+            <div class="lb-wagered-label">WAGERED</div>
+            <div class="lb-wagered">$0.<span>00</span></div>
+            <div class="lb-prize lb-prize-second">
+              $700
+              <span class="lb-coin">$</span>
+            </div>
+          </div>
+
+          <div class="lb-place lb-first reveal">
+            <div class="lb-crown">♛</div>
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">1</div></div>
+            <div class="lb-username">—</div>
+            <div class="lb-wagered-label">WAGERED</div>
+            <div class="lb-wagered">$0.<span>00</span></div>
+            <div class="lb-prize lb-prize-first">
+              $1,000
+              <span class="lb-coin">$</span>
+            </div>
+          </div>
+
+          <div class="lb-place lb-third reveal">
+            <div class="lb-avatar"><span>?</span><div class="lb-rank">3</div></div>
+            <div class="lb-username">—</div>
+            <div class="lb-wagered-label">WAGERED</div>
+            <div class="lb-wagered">$0.<span>00</span></div>
+            <div class="lb-prize lb-prize-third">
+              $500
+              <span class="lb-coin">$</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-countdown-wrap reveal">
+          <div class="lb-clock-icon">⏱</div>
+          <div class="lb-countdown-label">LEADERBOARD ENDS IN</div>
+          <div class="lb-countdown-note">The winners will be determined when the timer runs out.</div>
+          <div class="lb-countdown">
+            <div class="lb-time"><strong data-unit="days">00</strong><span>DAYS</span></div>
+            <div class="lb-time"><strong data-unit="hrs">00</strong><span>HRS</span></div>
+            <div class="lb-time"><strong data-unit="min">00</strong><span>MIN</span></div>
+            <div class="lb-time"><strong data-unit="sec">00</strong><span>SEC</span></div>
+          </div>
+          <div class="lb-announce-note">Wager abuse will lead to disqualification and forfeiture of leaderboard prize</div>
+        </div>
+
+        <div class="lb-challengers reveal">
+          <h3 class="lb-challengers-title">CHALLENGERS</h3>
+          <div class="lb-table-wrap">
+            <table class="lb-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>USER</th>
+                  <th class="num">WAGERED</th>
+                  <th class="num">PRIZE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>4</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$250.<span class="cents">00</span></td></tr>
+                <tr><td>5</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$175.<span class="cents">00</span></td></tr>
+                <tr><td>6</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$125.<span class="cents">00</span></td></tr>
+                <tr><td>7</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$100.<span class="cents">00</span></td></tr>
+                <tr><td>8</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$75.<span class="cents">00</span></td></tr>
+                <tr><td>9</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$50.<span class="cents">00</span></td></tr>
+                <tr><td>10</td><td><span class="lb-mini-avatar">?</span>—</td><td class="num">$0.<span class="cents">00</span></td><td class="num lb-prize-amt">$25.<span class="cents">00</span></td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -194,6 +266,8 @@
     });
 
     // ============== COUNTDOWN — end of current month (UTC) ==============
+    // Both panels (Shuffle, LuxDrop) share the same monthly window, so we update
+    // every .lb-countdown on the page.
     const _now = new Date();
     const endsAt = Date.UTC(_now.getUTCFullYear(), _now.getUTCMonth() + 1, 1, 0, 0, 0);
     function tick() {
@@ -203,12 +277,13 @@
       const m = Math.floor((diff % 3600000) / 60000);
       const s = Math.floor((diff % 60000) / 1000);
       const fmt = n => String(n).padStart(2, '0');
-      const root = document.getElementById('lb-countdown');
-      if (!root) return;
-      root.querySelector('[data-unit="days"]').textContent = fmt(d);
-      root.querySelector('[data-unit="hrs"]').textContent  = fmt(h);
-      root.querySelector('[data-unit="min"]').textContent  = fmt(m);
-      root.querySelector('[data-unit="sec"]').textContent  = fmt(s);
+      document.querySelectorAll('.lb-countdown').forEach(root => {
+        const set = (unit, val) => {
+          const el = root.querySelector(`[data-unit="${unit}"]`);
+          if (el) el.textContent = fmt(val);
+        };
+        set('days', d); set('hrs', h); set('min', m); set('sec', s);
+      });
     }
     tick();
     setInterval(tick, 1000);
@@ -233,11 +308,11 @@
       return { whole: parts[0], cents: parts[1] };
     }
 
-    function setPlace(selector, user) {
-      const root = document.querySelector(`[data-panel="shuffle"] ${selector}`);
+    function setPlace(panel, selector, user, wageredField) {
+      const root = document.querySelector(`[data-panel="${panel}"] ${selector}`);
       if (!root || !user) return;
       root.querySelector('.lb-username').textContent = maskName(user.username);
-      const m = splitMoney(user.weightedWagerAmount);
+      const m = splitMoney(user[wageredField]);
       root.querySelector('.lb-wagered').innerHTML = `$${m.whole}.<span>${m.cents}</span>`;
     }
 
@@ -274,9 +349,9 @@
 
         if (ranked.length === 0) return; // keep dummy fallback
 
-        setPlace('.lb-first',  ranked[0]);
-        setPlace('.lb-second', ranked[1]);
-        setPlace('.lb-third',  ranked[2]);
+        setPlace('shuffle', '.lb-first',  ranked[0], 'weightedWagerAmount');
+        setPlace('shuffle', '.lb-second', ranked[1], 'weightedWagerAmount');
+        setPlace('shuffle', '.lb-third',  ranked[2], 'weightedWagerAmount');
 
         const tbody = document.querySelector('[data-panel="shuffle"] .lb-table tbody');
         if (tbody && ranked.length > 3) {
@@ -296,6 +371,88 @@
     }
 
     loadShuffleLeaderboard();
+
+    // ============== LUXDROP LEADERBOARD ==============
+    // The /api/leaderboard-lux serverless function injects the LUXDROP_API_KEY
+    // and proxies https://api.luxdrop.com/external/affiliates?codes=sisco&...
+    // Schema isn't documented, so we normalize defensively across common shapes
+    // and field names. If field names differ once a real response lands, adjust
+    // USERNAME_FIELDS / WAGERED_FIELDS below.
+
+    const LUX_USERNAME_FIELDS = ['username', 'user', 'name', 'displayName', 'discord', 'discordName'];
+    const LUX_WAGERED_FIELDS  = ['wagered', 'wagerAmount', 'totalWagered', 'volume', 'amount', 'deposited', 'totalDeposit'];
+
+    function pickField(obj, candidates) {
+      for (const k of candidates) {
+        if (obj[k] !== undefined && obj[k] !== null) return obj[k];
+      }
+      return undefined;
+    }
+
+    function flattenLuxResponse(data) {
+      // Shape attempt #1: flat array of user records
+      if (Array.isArray(data)) {
+        if (data.length === 0) return [];
+        // Maybe the array is per-code containers: [{ code, users: [...] }]
+        if (data[0] && Array.isArray(data[0].users)) {
+          return data.flatMap(c => c.users || []);
+        }
+        if (data[0] && Array.isArray(data[0].wagers)) {
+          return data.flatMap(c => c.wagers || []);
+        }
+        return data;
+      }
+      // Shape attempt #2: keyed by code, e.g. { sisco: [...] }
+      if (data && typeof data === 'object') {
+        // { sisco: { users: [...] } } or { sisco: [...] }
+        for (const k of Object.keys(data)) {
+          const v = data[k];
+          if (Array.isArray(v)) return v;
+          if (v && Array.isArray(v.users)) return v.users;
+          if (v && Array.isArray(v.wagers)) return v.wagers;
+        }
+      }
+      return [];
+    }
+
+    async function loadLuxLeaderboard() {
+      try {
+        const data = await fetchWithRetry('/api/leaderboard-lux');
+
+        const raw = flattenLuxResponse(data);
+        const ranked = raw
+          .map(u => ({
+            username: pickField(u, LUX_USERNAME_FIELDS) ?? '???',
+            wagered: Number(pickField(u, LUX_WAGERED_FIELDS) || 0),
+          }))
+          .filter(u => u.wagered > 0)
+          .sort((a, b) => b.wagered - a.wagered)
+          .slice(0, 10);
+
+        if (ranked.length === 0) return;
+
+        setPlace('lux', '.lb-first',  ranked[0], 'wagered');
+        setPlace('lux', '.lb-second', ranked[1], 'wagered');
+        setPlace('lux', '.lb-third',  ranked[2], 'wagered');
+
+        const tbody = document.querySelector('[data-panel="lux"] .lb-table tbody');
+        if (tbody && ranked.length > 3) {
+          tbody.innerHTML = '';
+          for (let i = 3; i < ranked.length; i++) {
+            const u = ranked[i];
+            const w = splitMoney(u.wagered);
+            const p = splitMoney(PRIZES[i] || 0);
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${i + 1}</td><td><span class="lb-mini-avatar">?</span>${maskName(u.username)}</td><td class="num">$${w.whole}.<span class="cents">${w.cents}</span></td><td class="num lb-prize-amt">$${p.whole}.<span class="cents">${p.cents}</span></td>`;
+            tbody.appendChild(row);
+          }
+        }
+      } catch (e) {
+        console.warn('LuxDrop leaderboard fetch failed, keeping placeholder content:', e);
+      }
+    }
+
+    loadLuxLeaderboard();
   </script>
 </body>
 </html>
