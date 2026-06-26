@@ -37,7 +37,14 @@ module.exports = async (req, res) => {
   let lastBody;
   for (let i = 0; i < 5; i++) {
     try {
-      const r = await fetch(url, { headers: { 'x-api-key': apiKey } });
+      const r = await fetch(url, {
+        headers: {
+          'x-api-key': apiKey,
+          'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
+          'Accept': 'application/json, text/plain, */*',
+          'Accept-Language': 'en-US,en;q=0.9',
+        },
+      });
       lastStatus = r.status;
       if (!r.ok) {
         // Capture the upstream response body so we can see WHY it rejected us.
