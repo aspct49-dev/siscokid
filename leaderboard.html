@@ -265,11 +265,26 @@
       });
     });
 
-    // ============== COUNTDOWN — end of current month (UTC) ==============
+    // ============== COUNTDOWN — end of current month (America/New_York) ==============
     // Both panels (Shuffle, LuxDrop) share the same monthly window, so we update
-    // every .lb-countdown on the page.
-    const _now = new Date();
-    const endsAt = Date.UTC(_now.getUTCFullYear(), _now.getUTCMonth() + 1, 1, 0, 0, 0);
+    // every .lb-countdown on the page. Timezone is Eastern (ET), DST-aware.
+    // Offset (ms) so that Date.UTC(ET wall-clock parts) === actualUTC + offset.
+    function nyOffsetMs(date) {
+      const p = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour12: false,
+        year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' })
+        .formatToParts(date).reduce((a, x) => (a[x.type] = x.value, a), {});
+      return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second) - date.getTime();
+    }
+    function etMonthStartUTC(year, month0) {
+      const guess = Date.UTC(year, month0, 1, 0, 0, 0);
+      return guess - nyOffsetMs(new Date(guess));
+    }
+    // Midnight ET on the 1st of next month (relative to the current ET month).
+    const _et = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', year: 'numeric', month: 'numeric' })
+      .formatToParts(new Date()).reduce((a, x) => (a[x.type] = x.value, a), {});
+    let _ey = +_et.year, _em = +_et.month; // month 1-12
+    if (_em === 12) { _ey++; _em = 1; } else { _em++; }
+    const endsAt = etMonthStartUTC(_ey, _em - 1);
     function tick() {
       const diff = Math.max(0, endsAt - Date.now());
       const d = Math.floor(diff / 86400000);

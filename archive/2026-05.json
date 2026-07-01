@@ -1,26 +1,28 @@
 {
   "month": "2026-05",
+  "displayMonth": "May 2026",
+  "timezone": "America/New_York",
   "affiliateId": "9ab3853d-dc5a-40f6-bad6-d7594ac9cff7",
-  "startTime": 1777593600,
-  "endTime": 1780272000,
-  "fetchedAt": "2026-06-08T10:36:53.876Z",
-  "totalEntries": 180,
+  "startTime": 1777608000,
+  "endTime": 1780286400,
+  "fetchedAt": "2026-07-01T02:41:55.560Z",
+  "totalEntries": 188,
   "rankedCount": 26,
   "leaderboard": [
     {
       "username": "codylee09299",
-      "wagerAmount": 117725.66280918804,
-      "weightedWagerAmount": 82889.50526777707
+      "wagerAmount": 118801.58251136803,
+      "weightedWagerAmount": 83613.59723799507
     },
     {
       "username": "SauulGoodMan",
-      "wagerAmount": 28750.602789829714,
-      "weightedWagerAmount": 28750.602789829714
+      "wagerAmount": 26152.708131852414,
+      "weightedWagerAmount": 26152.708131852414
     },
     {
       "username": "SiscosLeftNut",
-      "wagerAmount": 135646.1091078776,
-      "weightedWagerAmount": 25774.56383746211
+      "wagerAmount": 135680.77376324398,
+      "weightedWagerAmount": 25778.030302998748
     },
     {
       "username": "MadManMattyD",
@@ -33,24 +35,14 @@
       "weightedWagerAmount": 17607.926536445408
     },
     {
-      "username": "phonymcring",
-      "wagerAmount": 60766.16212251658,
-      "weightedWagerAmount": 11648.74565919649
-    },
-    {
       "username": "RonniePajamas",
       "wagerAmount": 11072.976892048533,
       "weightedWagerAmount": 7118.636514023853
     },
     {
       "username": "NGRmaki",
-      "wagerAmount": 41506.56114945344,
-      "weightedWagerAmount": 6543.205957008501
-    },
-    {
-      "username": "JerimiaJJ",
-      "wagerAmount": 61342.54879508012,
-      "weightedWagerAmount": 6437.691649326056
+      "wagerAmount": 41295.45382042604,
+      "weightedWagerAmount": 6522.095224105761
     },
     {
       "username": "wacost",
@@ -58,19 +50,24 @@
       "weightedWagerAmount": 5696.3129379769225
     },
     {
+      "username": "phonymcring",
+      "wagerAmount": 26637.28634016011,
+      "weightedWagerAmount": 5599.319694402019
+    },
+    {
       "username": "NoDebtPliz",
-      "wagerAmount": 7482.203730938373,
-      "weightedWagerAmount": 5553.024731266534
+      "wagerAmount": 7418.586409150374,
+      "weightedWagerAmount": 5489.407409478535
     },
     {
       "username": "mazna",
-      "wagerAmount": 27495.978619148023,
-      "weightedWagerAmount": 4436.613265089633
+      "wagerAmount": 27311.480868452923,
+      "weightedWagerAmount": 4418.163490020123
     },
     {
       "username": "scuffy47",
-      "wagerAmount": 33888.00648470088,
-      "weightedWagerAmount": 4173.970269661363
+      "wagerAmount": 33802.32694773906,
+      "weightedWagerAmount": 4154.4129354402185
     },
     {
       "username": "Nath4n",
@@ -93,9 +90,14 @@
       "weightedWagerAmount": 324.6798703915183
     },
     {
+      "username": "JerimiaJJ",
+      "wagerAmount": 423.7036952494014,
+      "weightedWagerAmount": 311.8249820169214
+    },
+    {
       "username": "gild",
-      "wagerAmount": 1525.3607040993,
-      "weightedWagerAmount": 294.45237787463
+      "wagerAmount": 1527.0339460179,
+      "weightedWagerAmount": 294.61970206649
     },
     {
       "username": "slot",
@@ -103,14 +105,14 @@
       "weightedWagerAmount": 185.772381869
     },
     {
-      "username": "JoeTheBoss",
-      "wagerAmount": 115.99425631315343,
-      "weightedWagerAmount": 95.74301173915343
-    },
-    {
       "username": "Bigpickspence",
       "wagerAmount": 66.58043236259998,
       "weightedWagerAmount": 65.96804323625997
+    },
+    {
+      "username": "JoeTheBoss",
+      "wagerAmount": 79.01164890116588,
+      "weightedWagerAmount": 60.521843611165885
     },
     {
       "username": "Gchilson371",
@@ -155,6 +157,11 @@
       "weightedWagerAmount": 0
     },
     {
+      "username": "dubiouscow",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
       "username": "Ramboxx123",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
@@ -176,6 +183,11 @@
     },
     {
       "username": "oizo",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Lowskee",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
     },
@@ -635,11 +647,6 @@
       "weightedWagerAmount": 0
     },
     {
-      "username": "Bigpickspence",
-      "wagerAmount": 66.58043236259998,
-      "weightedWagerAmount": 65.96804323625997
-    },
-    {
       "username": "murtalol2",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
@@ -716,8 +723,8 @@
     },
     {
       "username": "JoeTheBoss",
-      "wagerAmount": 115.99425631315343,
-      "weightedWagerAmount": 95.74301173915343
+      "wagerAmount": 79.01164890116588,
+      "weightedWagerAmount": 60.521843611165885
     },
     {
       "username": "Zbmario",
@@ -726,6 +733,11 @@
     },
     {
       "username": "yurtyanks77",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "M0rtyGambleZ",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
     },
@@ -800,11 +812,6 @@
       "weightedWagerAmount": 0
     },
     {
-      "username": "dozey1996",
-      "wagerAmount": 0,
-      "weightedWagerAmount": 0
-    },
-    {
       "username": "yeadown50k",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
@@ -830,7 +837,7 @@
       "weightedWagerAmount": 2.00000467828
     },
     {
-      "username": "BossNyiemai",
+      "username": "cuppatea",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
     },
@@ -850,6 +857,11 @@
       "weightedWagerAmount": 0
     },
     {
+      "username": "Bigpickspence",
+      "wagerAmount": 66.58043236259998,
+      "weightedWagerAmount": 65.96804323625997
+    },
+    {
       "username": "FloxCologne",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
@@ -858,26 +870,6 @@
       "username": "ilitter",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
-    },
-    {
-      "username": "mrpo16",
-      "wagerAmount": 0,
-      "weightedWagerAmount": 0
-    },
-    {
-      "username": "MarkoTech9",
-      "wagerAmount": 61.008134985795,
-      "weightedWagerAmount": 7.8229106025105
-    },
-    {
-      "username": "Nath4n",
-      "wagerAmount": 2104.1493064722868,
-      "weightedWagerAmount": 1618.285967980218
-    },
-    {
-      "username": "NoDebtPliz",
-      "wagerAmount": 7482.203730938373,
-      "weightedWagerAmount": 5553.024731266534
     },
     {
       "username": "Jcrankshaw",
@@ -895,12 +887,32 @@
       "weightedWagerAmount": 324.6798703915183
     },
     {
+      "username": "mrpo16",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "gild",
+      "wagerAmount": 1527.0339460179,
+      "weightedWagerAmount": 294.61970206649
+    },
+    {
+      "username": "RonniePajamas",
+      "wagerAmount": 11072.976892048533,
+      "weightedWagerAmount": 7118.636514023853
+    },
+    {
       "username": "TheVIPTV",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
     },
     {
       "username": "v1zz",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "CSGuru1234",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
     },
@@ -935,24 +947,19 @@
       "weightedWagerAmount": 0
     },
     {
-      "username": "RonniePajamas",
-      "wagerAmount": 11072.976892048533,
-      "weightedWagerAmount": 7118.636514023853
-    },
-    {
       "username": "Yunxio",
       "wagerAmount": 58048.169433982715,
       "weightedWagerAmount": 17607.926536445408
     },
     {
       "username": "JerimiaJJ",
-      "wagerAmount": 61342.54879508012,
-      "weightedWagerAmount": 6437.691649326056
+      "wagerAmount": 423.7036952494014,
+      "weightedWagerAmount": 311.8249820169214
     },
     {
       "username": "mazna",
-      "wagerAmount": 27495.978619148023,
-      "weightedWagerAmount": 4436.613265089633
+      "wagerAmount": 27311.480868452923,
+      "weightedWagerAmount": 4418.163490020123
     },
     {
       "username": "Adamnos",
@@ -980,14 +987,9 @@
       "weightedWagerAmount": 5696.3129379769225
     },
     {
-      "username": "daveramsey",
-      "wagerAmount": 1.7599999326,
-      "weightedWagerAmount": 0.17599999326
-    },
-    {
       "username": "codylee09299",
-      "wagerAmount": 117725.66280918804,
-      "weightedWagerAmount": 82889.50526777707
+      "wagerAmount": 118801.58251136803,
+      "weightedWagerAmount": 83613.59723799507
     },
     {
       "username": "Mayankvalorant",
@@ -995,24 +997,29 @@
       "weightedWagerAmount": 0
     },
     {
-      "username": "scuffy47",
-      "wagerAmount": 33888.00648470088,
-      "weightedWagerAmount": 4173.970269661363
+      "username": "Nath4n",
+      "wagerAmount": 2104.1493064722868,
+      "weightedWagerAmount": 1618.285967980218
     },
     {
-      "username": "gild",
-      "wagerAmount": 1525.3607040993,
-      "weightedWagerAmount": 294.45237787463
+      "username": "scuffy47",
+      "wagerAmount": 33802.32694773906,
+      "weightedWagerAmount": 4154.4129354402185
+    },
+    {
+      "username": "dozey1996",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
     },
     {
       "username": "SauulGoodMan",
-      "wagerAmount": 28750.602789829714,
-      "weightedWagerAmount": 28750.602789829714
+      "wagerAmount": 26152.708131852414,
+      "weightedWagerAmount": 26152.708131852414
     },
     {
       "username": "phonymcring",
-      "wagerAmount": 60766.16212251658,
-      "weightedWagerAmount": 11648.74565919649
+      "wagerAmount": 26637.28634016011,
+      "weightedWagerAmount": 5599.319694402019
     },
     {
       "username": "Skullggx",
@@ -1020,14 +1027,34 @@
       "weightedWagerAmount": 0
     },
     {
-      "username": "NGRmaki",
-      "wagerAmount": 41506.56114945344,
-      "weightedWagerAmount": 6543.205957008501
+      "username": "theoggoat",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
     },
     {
       "username": "SiscosLeftNut",
-      "wagerAmount": 135646.1091078776,
-      "weightedWagerAmount": 25774.56383746211
+      "wagerAmount": 135680.77376324398,
+      "weightedWagerAmount": 25778.030302998748
+    },
+    {
+      "username": "daveramsey",
+      "wagerAmount": 1.7599999326,
+      "weightedWagerAmount": 0.17599999326
+    },
+    {
+      "username": "BossNyiemai",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "NoDebtPliz",
+      "wagerAmount": 7418.586409150374,
+      "weightedWagerAmount": 5489.407409478535
+    },
+    {
+      "username": "lascio",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
     },
     {
       "username": "MadManMattyD",
@@ -1035,9 +1062,24 @@
       "weightedWagerAmount": 19936.2046073325
     },
     {
+      "username": "dannyboii",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
       "username": "Siscon",
       "wagerAmount": 0,
       "weightedWagerAmount": 0
+    },
+    {
+      "username": "NGRmaki",
+      "wagerAmount": 41295.45382042604,
+      "weightedWagerAmount": 6522.095224105761
+    },
+    {
+      "username": "MarkoTech9",
+      "wagerAmount": 61.008134985795,
+      "weightedWagerAmount": 7.8229106025105
     }
   ]
 }
