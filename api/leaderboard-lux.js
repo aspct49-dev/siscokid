@@ -18,12 +18,11 @@ module.exports = async (req, res) => {
     return;
   }
 
-  // Current calendar month, UTC. LuxDrop wants YYYY-MM-DD.
-  const now = new Date();
-  const yyyy = now.getUTCFullYear();
-  const mm = String(now.getUTCMonth() + 1).padStart(2, '0');
-  const startDate = `${yyyy}-${mm}-01`;
-  const endDate = now.toISOString().slice(0, 10);
+  // Current calendar month, Eastern time (America/New_York). LuxDrop wants YYYY-MM-DD.
+  const et = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' })
+    .formatToParts(new Date()).reduce((a, x) => ((a[x.type] = x.value), a), {});
+  const startDate = `${et.year}-${et.month}-01`;
+  const endDate = `${et.year}-${et.month}-${et.day}`;
 
   const url = `https://api.luxdrop.com/external/affiliates?codes=${AFFILIATE_CODE}&startDate=${startDate}&endDate=${endDate}`;
 
