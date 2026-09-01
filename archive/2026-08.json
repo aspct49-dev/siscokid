@@ -1,0 +1,1145 @@
+{
+  "month": "2026-08",
+  "displayMonth": "August 2026",
+  "timezone": "America/New_York",
+  "affiliateId": "9ab3853d-dc5a-40f6-bad6-d7594ac9cff7",
+  "startTime": 1785556800,
+  "endTime": 1788235200,
+  "fetchedAt": "2026-09-01T10:02:42.475Z",
+  "totalEntries": 200,
+  "rankedCount": 26,
+  "leaderboard": [
+    {
+      "username": "cuppatea",
+      "wagerAmount": 997780.2012306069,
+      "weightedWagerAmount": 110579.11523254233
+    },
+    {
+      "username": "MadManMattyD",
+      "wagerAmount": 52367.780128207276,
+      "weightedWagerAmount": 51376.14134353043
+    },
+    {
+      "username": "RonniePajamas",
+      "wagerAmount": 55103.03810850094,
+      "weightedWagerAmount": 30296.876566445095
+    },
+    {
+      "username": "SauulGoodMan",
+      "wagerAmount": 18412.089199912214,
+      "weightedWagerAmount": 18412.089199912214
+    },
+    {
+      "username": "NGRmaki",
+      "wagerAmount": 48773.409564374386,
+      "weightedWagerAmount": 12241.360841003638
+    },
+    {
+      "username": "bigjiggity",
+      "wagerAmount": 73474.14180570406,
+      "weightedWagerAmount": 9346.145510227168
+    },
+    {
+      "username": "NoDebtPliz",
+      "wagerAmount": 44283.25693084069,
+      "weightedWagerAmount": 6808.256069547251
+    },
+    {
+      "username": "daveramsey",
+      "wagerAmount": 51187.05663045311,
+      "weightedWagerAmount": 5669.449965897306
+    },
+    {
+      "username": "mazna",
+      "wagerAmount": 22926.133773049092,
+      "weightedWagerAmount": 4764.887318034929
+    },
+    {
+      "username": "v1zz",
+      "wagerAmount": 39119.9928854286,
+      "weightedWagerAmount": 3911.99928854286
+    },
+    {
+      "username": "codylee09299",
+      "wagerAmount": 6963.1232392229,
+      "weightedWagerAmount": 3727.87232392229
+    },
+    {
+      "username": "Lowskee",
+      "wagerAmount": 7986.220908826619,
+      "weightedWagerAmount": 3597.1416537581385
+    },
+    {
+      "username": "scuffy47",
+      "wagerAmount": 23491.498746474466,
+      "weightedWagerAmount": 2545.2312179281757
+    },
+    {
+      "username": "F4isal",
+      "wagerAmount": 5627.01,
+      "weightedWagerAmount": 1435.76
+    },
+    {
+      "username": "Nath4n",
+      "wagerAmount": 1351.1664497678958,
+      "weightedWagerAmount": 1259.8704498290965
+    },
+    {
+      "username": "jcass246",
+      "wagerAmount": 11493.15656855975,
+      "weightedWagerAmount": 1149.315656855975
+    },
+    {
+      "username": "gild",
+      "wagerAmount": 2651.9437206895,
+      "weightedWagerAmount": 593.85406685423
+    },
+    {
+      "username": "VeeVA",
+      "wagerAmount": 5356.2509412252,
+      "weightedWagerAmount": 592.32509412252
+    },
+    {
+      "username": "phonymcring",
+      "wagerAmount": 250.7249866300626,
+      "weightedWagerAmount": 218.5654756180926
+    },
+    {
+      "username": "pippo200aura",
+      "wagerAmount": 1089.1578239589012,
+      "weightedWagerAmount": 207.62470639542127
+    },
+    {
+      "username": "Relapsed1",
+      "wagerAmount": 1591.317089907549,
+      "weightedWagerAmount": 201.85007625570412
+    },
+    {
+      "username": "Tobbelino123",
+      "wagerAmount": 398.87696259769,
+      "weightedWagerAmount": 39.887696259769
+    },
+    {
+      "username": "BossNyiemai",
+      "wagerAmount": 90.15170893075047,
+      "weightedWagerAmount": 33.703136788870474
+    },
+    {
+      "username": "stge",
+      "wagerAmount": 138.3414975085,
+      "weightedWagerAmount": 13.83414975085
+    },
+    {
+      "username": "MarkoTech9",
+      "wagerAmount": 41.7857233323,
+      "weightedWagerAmount": 4.17857233323
+    },
+    {
+      "username": "yeadown50k",
+      "wagerAmount": 10.00000000832,
+      "weightedWagerAmount": 1.000000000832
+    }
+  ],
+  "raw": [
+    {
+      "username": "Jcrankshaw87",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Stackker",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "smithfoe",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "GringleStan",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "dubiouscow",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Ramboxx123",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Rambo2107x",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "spannersmity",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ILuvSisco",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yurtyan",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "oizo",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "unhinged420",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "toekneebalogna",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "donsh",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "TinglesX",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yurtsunday",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "IceKing",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Slaying",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mopedwrecker",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "farmedonsol",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Jcass0309",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "joulu",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Shxrt",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "winweaver",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "SiscosBabyDad",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Tangeloww",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "sekirata",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ooteehc",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ShadowZoro0000",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "itsbeef",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Landero111",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "TylerT",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "skinnybadger",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Xanaxe",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "seventime",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "whoisdeee",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "maj0r",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "OfflineGambling",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "sirbanger",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Don88767",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Popopp",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "gofundstee",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "TotoroGambles",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "PastsAffiliates",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BeerAndPoker",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Jewry",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "PoggyWoggy",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "EchoFTW",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "MuhamadSalfi",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "CSGuru1234",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "TinglesTV",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Deesee",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mase12",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BleedTheFifth",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "SiscosSon",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "PastsStreamGamba",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yurrfunk",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yanks22",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "shuffsisco",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "r456vv",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Sleepingrn",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "frankspinatra23",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "garbage687",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "withessmum",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "MoneyBagBro",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "apex7",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "timmytwo",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Bradford111",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "amesh08",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "flashsyz",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BizasCS",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "sismop",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ak74",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Entreprelou",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "PokerHype",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "syztohut",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "DomincHess",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "richiehall517",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Ouchyay",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Haybail13",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "DomoJohns",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "LuciferX007",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BioCsgo",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mrhunt069",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "shuffyamks",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "sunsetheav",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Pollux",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "prepaid",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Whatwedoing2",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Bozzzzzzzz",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Yurtkent",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mertkert",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "blowtod",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "metamorpheus",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "HahaSweat",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Idkwhy222",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "swashconcrete",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "preggonavi",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "sunnypathetic",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "shuffyanks",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yanksdodo",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "murtalol2",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Mooedz",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Realhomieee",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "bananjo",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Dufraine",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "smittwt",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BurnerYanks",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "SHURT",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "bigchungus22",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yanksgotg",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "LaceupSisco",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "utoyn",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "rubyyanks",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Adunkey",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "JoeTheBoss",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Zbmario",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yurtyanks77",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "M0rtyGambleZ",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ikethebosstv",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "siscobro",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "S63Roadmap",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "spender3938",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "spendur222",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Jughead04",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Terror365",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "POBARO",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "bioyur",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "abar0907",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ChilsonsPoor",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "allingambler",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Wolfieyx",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BRexxx",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Zeini1232",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Sonicpulse",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "PixelxSisco",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Tobbelino123",
+      "wagerAmount": 398.87696259769,
+      "weightedWagerAmount": 39.887696259769
+    },
+    {
+      "username": "Fentagooner111",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "sismokid",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mikedc",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Bigpickspence",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "FloxCologne",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ilitter",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Jcrankshaw",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Gchilson371",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Gabler",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "bettercallchico",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "TheVIPTV",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Mayankvalorant",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "TheFlame",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "waco111",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "kdupset",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "CeeEyeAye",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Beeswax111",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Yunxio",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "JerimiaJJ",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Adamnos",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Kiritos",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "DPUTZOxSK",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "ReignOfTiger",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "wacost",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "codylee09299",
+      "wagerAmount": 6963.1232392229,
+      "weightedWagerAmount": 3727.87232392229
+    },
+    {
+      "username": "Nath4n",
+      "wagerAmount": 1351.1664497678958,
+      "weightedWagerAmount": 1259.8704498290965
+    },
+    {
+      "username": "dozey1996",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "Lowskee",
+      "wagerAmount": 7986.220908826619,
+      "weightedWagerAmount": 3597.1416537581385
+    },
+    {
+      "username": "Skullggx",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "theoggoat",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "SiscosLeftNut",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "BossNyiemai",
+      "wagerAmount": 90.15170893075047,
+      "weightedWagerAmount": 33.703136788870474
+    },
+    {
+      "username": "NoDebtPliz",
+      "wagerAmount": 44283.25693084069,
+      "weightedWagerAmount": 6808.256069547251
+    },
+    {
+      "username": "MadManMattyD",
+      "wagerAmount": 52367.780128207276,
+      "weightedWagerAmount": 51376.14134353043
+    },
+    {
+      "username": "dannyboii",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "NGRmaki",
+      "wagerAmount": 48773.409564374386,
+      "weightedWagerAmount": 12241.360841003638
+    },
+    {
+      "username": "F4isal",
+      "wagerAmount": 5627.01,
+      "weightedWagerAmount": 1435.76
+    },
+    {
+      "username": "Siscon",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "gild",
+      "wagerAmount": 2651.9437206895,
+      "weightedWagerAmount": 593.85406685423
+    },
+    {
+      "username": "jeffry103",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "yeadown50k",
+      "wagerAmount": 10.00000000832,
+      "weightedWagerAmount": 1.000000000832
+    },
+    {
+      "username": "lolliMak",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mrpo16",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "lascio",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "jcass246",
+      "wagerAmount": 11493.15656855975,
+      "weightedWagerAmount": 1149.315656855975
+    },
+    {
+      "username": "onlywinningONB",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "mazna",
+      "wagerAmount": 22926.133773049092,
+      "weightedWagerAmount": 4764.887318034929
+    },
+    {
+      "username": "SHARKTHEMARK",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "CharmCalm",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "phonymcring",
+      "wagerAmount": 250.7249866300626,
+      "weightedWagerAmount": 218.5654756180926
+    },
+    {
+      "username": "SauulGoodMan",
+      "wagerAmount": 18412.089199912214,
+      "weightedWagerAmount": 18412.089199912214
+    },
+    {
+      "username": "scuffy47",
+      "wagerAmount": 23491.498746474466,
+      "weightedWagerAmount": 2545.2312179281757
+    },
+    {
+      "username": "stge",
+      "wagerAmount": 138.3414975085,
+      "weightedWagerAmount": 13.83414975085
+    },
+    {
+      "username": "slot",
+      "wagerAmount": 0,
+      "weightedWagerAmount": 0
+    },
+    {
+      "username": "bigjiggity",
+      "wagerAmount": 73474.14180570406,
+      "weightedWagerAmount": 9346.145510227168
+    },
+    {
+      "username": "cuppatea",
+      "wagerAmount": 997780.2012306069,
+      "weightedWagerAmount": 110579.11523254233
+    },
+    {
+      "username": "Relapsed1",
+      "wagerAmount": 1591.317089907549,
+      "weightedWagerAmount": 201.85007625570412
+    },
+    {
+      "username": "RonniePajamas",
+      "wagerAmount": 55103.03810850094,
+      "weightedWagerAmount": 30296.876566445095
+    },
+    {
+      "username": "v1zz",
+      "wagerAmount": 39119.9928854286,
+      "weightedWagerAmount": 3911.99928854286
+    },
+    {
+      "username": "MarkoTech9",
+      "wagerAmount": 41.7857233323,
+      "weightedWagerAmount": 4.17857233323
+    },
+    {
+      "username": "pippo200aura",
+      "wagerAmount": 1089.1578239589012,
+      "weightedWagerAmount": 207.62470639542127
+    },
+    {
+      "username": "VeeVA",
+      "wagerAmount": 5356.2509412252,
+      "weightedWagerAmount": 592.32509412252
+    },
+    {
+      "username": "daveramsey",
+      "wagerAmount": 51187.05663045311,
+      "weightedWagerAmount": 5669.449965897306
+    }
+  ]
+}
